@@ -5,7 +5,7 @@
  * - https://github.com/twbs/bootstrap/tree/master/scss
  */
 
-@use 'sass:color';
+@use 'sass:color'
 
 // Add new badges
 $newbadges: ("orange": #fa6b20, "purple": #7239ea, "pink": #f24792)
@@ -20,7 +20,7 @@ $newbadges: ("orange": #fa6b20, "purple": #7239ea, "pink": #f24792)
 
   .badge-#{$name}-shaded
     @extend .badge-#{$name}-outline
-    background-color: color.scale($hex, $alpha: -90%) !important;
+    background-color: color.scale($hex, $alpha: -90%) !important
 
 // Add outline and shaded badge variants
 @each $name, $colour in $theme-colors
@@ -30,7 +30,7 @@ $newbadges: ("orange": #fa6b20, "purple": #7239ea, "pink": #f24792)
 
   .badge-#{$name}-shaded
     @extend .badge-#{$name}-outline
-    background-color: color.scale(#{$colour}, $alpha: -90%) !important;
+    background-color: color.scale(#{$colour}, $alpha: -90%) !important
 
 // Additional "admin" style to indicate non-standard-user interactions
 $admin-text-color: #31708f
