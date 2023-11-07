@@ -4,8 +4,8 @@ class UserPresenter < BasePresenter
   delegate :id, to: :user
   delegate :name, to: :user
 
-  BADGE_COLORS = %w[Green Red Yellow Blue].freeze
-  BADGE_CLASSES = %w[badge-success badge-danger badge-warning badge-info].freeze
+  BADGE_COLORS = %w[Green Red Yellow Blue Orange Purple Pink].freeze
+  BADGE_CLASSES = %w[badge-success badge-danger badge-warning badge-info badge-orange badge-purple badge-pink].freeze
 
   def link(label = nil, options = {})
     label ||= user.name
